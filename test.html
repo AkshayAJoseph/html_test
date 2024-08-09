@@ -7,15 +7,15 @@
     <meta name=""viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
   </head>
   <body>
-  <ul>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Projects</a></li>
       <li><a href="#">Contact</a></li>
   </ul>
-  </ul>
+  
   <section class="about">
     <h1>Akshay Joseph</h1>
     <h4>About Me</h4>
@@ -24,18 +24,21 @@
   </section>
   <section class="search">
     <input type="email" placeholder="Enter email">
-    <button >enter</button>
+    <button onclick="sendEmail()">Click for Connecting</button>
   </section>
   <footer>
     <div  align="center">
-      <a href="mailto:akshayjoseph003@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-      <a href="www.linkedin.com/in/akshay-joseph-668b49285"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-      <a href="https://www.instagram.com/akshay.a.joseph/"><img alt="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" /></a>
+      <a href="mailto:akshayjoseph003@gmail.com"><img class="size" alt="Gmail" src="pngtree-gmail-logo-png-png-image_4868140.jpg" /></a>
+      <a href="www.linkedin.com/in/akshay-joseph-668b49285"><img class="size" alt="LinkedIn" src="circle-linkedin-512.webp" /></a>
+      <a href="https://www.instagram.com/akshay.a.joseph/"><img class="size" alt="Instagram" src="Instagram_icon.png.webp" /></a>
     </div>
   </footer>
   <script type="text/javascript">
     function sendEmail() {
-
+      var email = document.getElementById("mail").value;
+      var subject = "Request to Connect-reg.";
+      var body = "Hello, I would like to conenct with you."
+      window.location.href = "mailto:" +encodeURIComponent(email)+"?subject=" + encodeURIComponent(subject)+"&body=" + encodeURIComponent(body)+ "&cc=akshayjoseph003@gmail.com";
 
     }
   </script>

@@ -71,16 +71,6 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-
-}
-.fb{
-    width: 30px;
-    height:30px;
-    
-}
-.insta{
-    width: 30px;
-    height: 30px;
 }
 button{
     height: 30px;
@@ -91,4 +81,6 @@ input{
     width:180px;
     border-width: 20px;
 }
-
+.size  {
+    width: 50px;
+}
