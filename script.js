@@ -4,11 +4,10 @@ function fn() {
 document.getElementById('par').innerHTML=a;
         
 }
-<script type="text/javascript">
 function sendEmail() {
-  var email = document.getElementById("mail").value;
-  var subject = "Request to Connect-reg.";
-  var body = "Hello, I would like to conenct with you."
-  window.location.href = "mailto:" +encodeURIComponent (email)+"?subject=" + encodeURIComponent(subject)&body + encodeURIComponent(body)+ "&cc=akshayjoseph003@gmail.com";
+  var Email= document.getElementById('email').value;
+  var subject = "Request to Connect";
+  var body = "Hello, I would like to connect with you.";
+  window.location.href = "mailto:akshayjoseph003@gmail.com"+"?subject" + encodeURIComponen(subject)+"&body=" + encodeURIComponent(body)+ "&cc="+ encodeURIComponent(Email);
 
 }
